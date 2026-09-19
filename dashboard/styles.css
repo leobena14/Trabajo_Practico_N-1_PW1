@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 1.25rem;
+    max-width: 43.75rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+}
+
+header {
+    padding: 0.875rem 1rem;
+    font-weight: bold;
+    border-bottom: 0.0625rem solid #ccc;
+    background: #fafafa;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main h2 {
+    grid-column: 1 / -1;
+    padding: 0.875rem 1rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 0.0625rem solid #ccc;
+}
+
+article.cursos,
+aside {
+    padding: 1.25rem 1rem;
+    border-right: 0.0625rem solid #ccc;
+    text-align: center;
+}
+
+article.cursos h3,
+aside h3 {
+    font-size: 0.9375rem;
+    margin: 0 0 1rem;
+}
+
+article.cursos p,
+aside p {
+    margin: 0.375rem 0;
+    font-size: 0.875rem;
+}
+
+button {
+    margin-top: 1rem;
+    background: #eee;
+    border: 0.0625rem solid #999;
+    border-radius: 0.1875rem;
+    padding: 0.3125rem 0.875rem;
+    font-weight: bold;
+    font-size: 0.8125rem;
+    
+}
+
