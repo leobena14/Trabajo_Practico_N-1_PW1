@@ -3,28 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 	<title>LingoWeb - Perfil de usuario</title>
 </head>
 <body>
-    <nav>
+    <nav aria-label="principal" class="principal">
         <p><strong>LingoWeb</strong> | 
-        <a href="../dashboard/dashboard.html" ->CURSOS</a> - 
-        <a href="../perfil/perfil-usuario.html">PERFIL</a> -  
-        <a href="../ranking/ranking-personal.html">RANKING</a> | </p>
+        <a href="../dashboard/dashboard.html" ->CURSOS</a> 
+        <a href="../perfil/perfil-usuario.html">PERFIL</a>  
+        <a href="../ranking/ranking-personal.html">RANKING</a></p>
     </nav>
-	<main>
-		<section class="bloque-izq">
+	<main class="contenedor-prin">
+		<section class="perfil-usuario">
         <figure>
             <img src="fotos/foto-perfil.png" alt="Foto de perfil">
         </figure>
-        <h2>Julian Gonzalez</h2>
-        <p>@juliangonzalez_web</p>
+        <h2>Juan Perez</h2>
+        <p>@juanperez_web</p>
         <p>Miembro desde Febrero 2025</p>
         <a href="../index.html">Cerrar Sesion</a>
         </section>
 
-		<section class="bloque-der">
-			
+		<section class="datos">
+			<form action="#" method="post">
+                <p>
+                    <strong>Email registrado: </strong>
+                    juanperez@gmail.com
+                </p>
+                <p>
+                    <button type="button">Cambiar contraseña</button>
+                </p>
+                <p>
+                    <label for="idioma"><strong>Idioma principal de interfaz: </strong></label>
+                </p>
+
+            </form>
         </section>
 
 		<div class="acciones">
@@ -34,7 +47,6 @@
                     <option value="en" selected>Ingles</option>
 				</select>
 			</label>
-			<button type="button">Cambiar contraseña</button>
 		</div>
 	</main>
 </body>

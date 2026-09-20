@@ -1,0 +1,25 @@
+*{
+    box-sizing:	border-box;
+}
+
+body{
+    text-align: center;
+     background-color: #DDD6FE;
+     margin: 0;
+}
+.principal{
+    width: 80%;
+    background-color: #4F46E5;
+    color: white;
+    margin: 0 auto;
+    padding:0.5em;
+    text-decoration:none;
+    font-size: 1.5em;
+     position: sticky;
+    top: 0;
+}
+.principal a{
+    text-decoration:none;
+    color: white;
+    margin: 0 0.5em;
+}
