@@ -1,25 +1,165 @@
 *{
     box-sizing:	border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
 body{
-    text-align: center;
-     background-color: #DDD6FE;
-     margin: 0;
+    background-color: #DDD6FE;
+    font-family: serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
 }
 .principal{
-    width: 80%;
     background-color: #4F46E5;
     color: white;
-    margin: 0 auto;
-    padding:0.5em;
-    text-decoration:none;
+    text-align: center;
     font-size: 1.5em;
-     position: sticky;
-    top: 0;
+    padding: 1.5em;
+    width: 80%;
 }
 .principal a{
     text-decoration:none;
     color: white;
     margin: 0 0.5em;
+}
+.contenedor-prin{
+    margin: 2em auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 80% 20%;
+    width: 80%;
+    border: 0.1em solid black;
+
+}
+.perfil-usuario{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 2em 1em;
+    border-right: 0.1em solid black;
+    gap: 0.8em;
+    grid-column: 1;
+    grid-row: 1/3;
+    
+}
+img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5em
+}
+.perfil-usuario h2{
+    font-size: 1.3em;
+}
+.perfil-usuario p{
+    font-size: 0.95em;
+}
+.logros{
+    margin-top: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+.logros h3{
+    margin-bottom: 0.8em;
+    font-size: 1.1em;
+}
+.logros ul{
+   
+    display: flex;
+    gap: 0.4em;
+    
+    padding-left: 2em;
+    margin: 0 auto;
+}
+.logros li strong{
+    margin-right: 0.3em;
+}
+.datos-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 2.5em;
+    grid-column: 2;
+    grid-row: 1;
+}
+.datos{
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+fieldset .form{
+    border: 0.08em solid black;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+    width: 100%;
+    max-width: 28em;
+}
+legend{
+    padding: 0 0.4em;
+    font-weight: 28em;
+}
+.form-idioma{
+    border: none;
+    padding: 0;
+}
+.grupo-datos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.08em;
+    gap: 1em;
+}
+.grupo-datos label{
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+.input, select{
+    width: 12em;
+    padding: 0.3em 0.5em;
+    border: 0.08em solid rgb(81, 80, 80);
+    background-color: white;
+    font-size: 0.9em;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 1.5em;
+    gap:1em;
+    padding: 1.5em 4em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.boton-cancelar {
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.boton-cancelar:hover{
+    color:white;
+    background-color: rgb(215, 65, 65);
+}
+.boton-cancelar:hover a{
+    color: white;
+}
+.boton-guardar{
+    color: black;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.boton-guardar:hover{
+    color: white;
+    background-color: rgb(37, 138, 37);
 }
