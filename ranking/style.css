@@ -1,9 +1,13 @@
 *{
     box-sizing:	border-box; 
-
 }
 
-c
+body{
+    text-align: center;
+    background-color: #DDD6FE;
+    margin: 0;
+}
+
 
 img{
     width: 3em;
