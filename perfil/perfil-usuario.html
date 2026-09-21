@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-	<title>LingoWeb - Perfil de usuario</title>
+    <title>LingoWeb - Perfil de usuario</title>
 </head>
+
 <body>
     <nav aria-label="principal" class="principal">
-        <p><strong>LingoWeb</strong> | 
-        <a href="../dashboard/dashboard.html" ->CURSOS</a> 
-        <a href="../perfil/perfil-usuario.html">PERFIL</a>  
-        <a href="../ranking/ranking-personal.html">RANKING</a></p>
+        <p><strong>LingoWeb</strong> |
+            <a href="../dashboard/dashboard.html" ->CURSOS</a>
+            <a href="../perfil/perfil-usuario.html">PERFIL</a>
+            <a href="../ranking/ranking-personal.html">RANKING</a>
+            <a href="../tienda/tienda.html">TIENDA</a> |
+        </p>
     </nav>
-	<main class="contenedor-prin">
-		<section class="perfil-usuario">
-        <figure>
-            <img src="fotos/foto-perfil.png" alt="Foto de perfil">
-        </figure>
-        <h2>Juan Perez</h2>
-        <p>@juanperez_web</p>
-        <p>Miembro desde Febrero 2025</p>
+    <main class="contenedor-prin">
+        <section class="perfil-usuario">
+            <figure>
+                <img src="fotos/foto-perfil.png" alt="Foto de perfil">
+            </figure>
+            <h2>Juan Perez</h2>
+            <p>@juanperez_web</p>
+            <p>Miembro desde Febrero 2025</p>
             <section class="logros">
                 <h3>Logros Académicos</h3>
-                    <ul>
-                        <li><strong>Insignias:</strong>5 Obtenidas</li>
-                        <li><strong>Racha:</strong>🔥 12 Días</li>
-                        <li><strong>Total XP:</strong>720 XP</li>
-                    </ul>
+                <ul>
+                    <li><strong>Insignias:</strong>5 Obtenidas</li>
+                    <li><strong>Racha:</strong>🔥 12 Días</li>
+                    <li><strong>Total XP:</strong>720 XP</li>
+                </ul>
 
             </section>
         </section>
 
-		<section class="datos-usuario">
-			<form action="#" method="post">
+        <section class="datos-usuario">
+            <form action="#" method="post">
                 <p class="datos">
                     <strong>Email registrado: </strong>
                     juanperez@gmail.com
                 </p>
                 <fieldset class="form">
-                <legend>Actualizacion de contraseña</legend>
-                <p class="grupo-datos">
-                    <label for="password"><strong>Contraseña actual:</strong></label>
-                    <input type="password" id="password" name="contraseña-actual" class="input" required>
-                </p>
-                <p class="grupo-datos">
-                    <label for="nueva-contraseña">Nueva contraseña:</label>
-                    <input type="password" id="nueva-contraseña" name="nueva-contraseña" class="input" required>
-                </p>
-                <p class="grupo-datos">
-                    <label for="confirmar-contraseña">Confirmar contraseña:</label>
-                    <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" class="input" required>
-                </p>
+                    <legend>Actualizacion de contraseña</legend>
+                    <p class="grupo-datos">
+                        <label for="password"><strong>Contraseña actual:</strong></label>
+                        <input type="password" id="password" name="contraseña-actual" class="input" required>
+                    </p>
+                    <p class="grupo-datos">
+                        <label for="nueva-contraseña">Nueva contraseña:</label>
+                        <input type="password" id="nueva-contraseña" name="nueva-contraseña" class="input" required>
+                    </p>
+                    <p class="grupo-datos">
+                        <label for="confirmar-contraseña">Confirmar contraseña:</label>
+                        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" class="input"
+                            required>
+                    </p>
                 </fieldset>
                 <fieldset class="form">
                     <label for="idioma">Idioma principal
-				    <select id="idioma" name="idioma">
-					    <option value="es" selected>Español</option>
-                        <option value="en" selected>Ingles</option>
-                        <option value="al" selected>Aleman</option>
-				    </select>
-			        </label>
+                        <select id="idioma" name="idioma">
+                            <option value="es" selected>Español</option>
+                            <option value="en" selected>Ingles</option>
+                            <option value="al" selected>Aleman</option>
+                        </select>
+                    </label>
                 </fieldset>
             </form>
         </section>
         <section class="botones">
-            <p >
+            <p>
                 <button type="submit" class="boton-guardar">Guardar Cambios</button>
                 <button type="button" class="boton-cancelar"> <a href="../index.html">Cerrar Sesion</a></button>
             </p>
         </section>
-	</main>
+    </main>
 </body>
+
 </html>

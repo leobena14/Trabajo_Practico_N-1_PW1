@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #DDD6FE;
+    font-family: serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal {
+    background-color: #4F46E5;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.5em;
+    width: 80%;
+}
+
+.principal a {
+    text-decoration: none;
+    color: white;
+    margin: 0 0.5em;
+}
+
+main {
+    width: 80%;
+    max-width: 25em;
+    margin-top: 2em;
+}
+
+fieldset {
+    margin-top: 5rem;
+    background-color: white;
+    border: 0.15em solid #4F46E5;
+    border-radius: 0.5em;
+    padding: 2.5em;
+}
+
+legend {
+    background-color: #4F46E5;
+    color: white;
+    padding: 0.3em 0.8em;
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    color: #4F46E5;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.6em;
+    border: 0.0625em solid #DDD6FE;
+    border-radius: 0.25em;
+    font-family: serif;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4F46E5;
+}
+
+.boton-comprar {
+    width: 100%;
+    margin-top: 1.5em;
+    padding: 0.8em;
+    background-color: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 0.25em;
+    font-family: serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.boton-comprar:hover {
+    background-color: #4338CA;
+}
+
+.cancelar {
+    display: block;
+    width: 80%;
+    max-width: 10rem;
+    margin: 1em auto 0;
+    padding: 0.8em;
+    background-color: transparent;
+    color: #000000;
+    border: 0.0625em solid #070707;
+    border-radius: 0.25em;
+    text-align: center;
+    text-decoration: none;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.cancelar:hover {
+    background-color: #4F46E5;
+    color: white;
+}
+
+.confirmacion {
+    margin-top: 5rem;
+    background-color: white;
+    border: 0.15em solid #4F46E5;
+    border-radius: 0.5em;
+    padding: 2.5em;
+    text-align: center;
+}
+
+.confirmacion h1 {
+    color: #4F46E5;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.confirmacion p {
+    margin-bottom: 1.5em;
+}
+
+.volver {
+    display: block;
+    padding: 0.8em;
+    background-color: #4F46E5;
+    color: white;
+    border-radius: 0.25em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volver:hover {
+    background-color: #4338CA;
+}
