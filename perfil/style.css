@@ -72,16 +72,14 @@ img{
     font-size: 1.1em;
 }
 .logros ul{
-   
+    list-style: none;
     display: flex;
-    gap: 0.4em;
-    
-    padding-left: 2em;
-    margin: 0 auto;
+    justify-content: center;
+    gap: 1em;
+    padding:0;
+    margin: 0;
 }
-.logros li strong{
-    margin-right: 0.3em;
-}
+
 .datos-usuario{
     display: flex;
     flex-direction: column;
