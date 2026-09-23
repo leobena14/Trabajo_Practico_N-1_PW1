@@ -87,8 +87,11 @@ img{
 }
 .datos{
     font-size: 1em;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
 }
 .form{
     border: 0.08em solid black;
