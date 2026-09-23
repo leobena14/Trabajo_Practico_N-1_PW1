@@ -144,3 +144,54 @@ input:focus {
 .volver:hover {
     background-color: #4338CA;
 }
+/* Tablet (48.01em a 64em) */
+@media (min-width: 48.01em) and (max-width: 64em) {
+  .principal {
+    width: 95%;
+  }
+
+  main {
+    width: 90%;
+    max-width: 28em;
+    margin-top: 1.5em;
+  }
+
+  fieldset,.confirmacion {
+    margin-top: 3rem; 
+    padding: 2em;
+  }
+}
+
+/* Celular (hasta 48em) */
+@media screen and (max-width: 48em) {
+  .principal {
+    width: 95%;
+    font-size: 1.2em;
+    padding: 1em;
+  }
+
+  main {
+    width: 92%;
+    max-width: 100%;
+    margin-top: 1em;
+  }
+
+  fieldset,.confirmacion {
+    margin-top: 1.5rem;
+    padding: 1.25em 1em; 
+  }
+
+  legend {
+    font-size: 1em;
+    padding: 0.2em 0.6em;
+  }
+
+  input,.boton-comprar,.cancelar,.volver {
+    padding: 0.75em;
+  }
+
+  .cancelar {
+    width: 100%;
+    max-width: none;
+  }
+}

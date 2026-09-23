@@ -1,5 +1,7 @@
 *{
     box-sizing:	border-box;
+}
+body{
     background-color: #F5F3FF;
 }
 
@@ -10,24 +12,24 @@ img{
 
 header{
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
     align-items: center;
 }
 
 main{
     width: 80%;
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 0 auto;   
 }
 
 form{
     width: 100%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     padding-bottom: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5%;
 
 }
 
@@ -67,6 +69,28 @@ button{
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+}
+
+/* Tablet (48.01em a 64em) */
+@media (min-width: 48.01em) and (max-width: 64em) {
+  #contrasena, #usuario, #nombre, #edad {
+    width: 50%; 
+  }
+  main {
+    width: 90%; 
+  }
+}
+/* Celular (hasta 48em) */
+@media screen and (max-width: 48em) {
+  #contrasena, #usuario, #nombre, #edad {
+    width: 85%; 
+    padding: 0.8em; 
+  }
+  #links {
+    flex-direction: column; 
+    align-items: center;
+    gap: 1em;
+  }
 }
 
 

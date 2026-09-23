@@ -62,4 +62,45 @@ td{
     font-size: 1.5em;
     padding: 0 0.5em;
 }
+/* Tablet (48.01em a 64em) */
+@media (min-width: 48.01em) and (max-width: 64em) {
+  .principal,table {
+    width: 95%;
+  }
+
+  th, td {
+    padding: 0.4em;
+  }
+}
+
+/* Celular (hasta 48em) */
+@media screen and (max-width: 48em) {
+  .principal,table {
+    width: 98%;
+  }
+
+  .principal {
+    font-size: 1.2em;
+    padding: 0.4em;
+  }
+
+  table {
+    font-size: 0.85em;
+  }
+
+  th, td {
+    padding: 0.3em 0.2em;
+  }
+
+  img {
+    width: 2em;
+  }
+
+  .ligas a {
+    font-size: 1.1em;
+    padding: 0.2em 0.5em;
+    display: inline-block;
+    margin: 0.2em;
+  }
+}
 

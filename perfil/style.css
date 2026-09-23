@@ -155,3 +155,88 @@ a{
     color: white;
     background-color: rgb(37, 138, 37);
 }
+/* Tablet (48.01em a 64em) */
+@media (min-width: 48.01em) and (max-width: 64em) {
+  .principal,.contenedor-prin {
+    width: 95%; 
+  }
+
+  .contenedor-prin {
+    grid-template-columns: 35% 65%;
+    grid-template-rows: auto auto;
+  }
+
+  .datos-usuario {
+    padding: 1.5em; 
+  }
+
+  .botones {
+    padding: 1em 2em; 
+  }
+
+  .input, select {
+    width: 10em; 
+  }
+}
+
+/* Celular (hasta 48em) */
+@media screen and (max-width: 48em) {
+  .principal, .contenedor-prin {
+    width: 95%;
+  }
+
+  .contenedor-prin {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+  }
+
+  .perfil-usuario {
+    grid-column: 1;
+    grid-row: 1; 
+    border-right: none;
+    border-bottom: 0.1em solid black; 
+    padding: 1.5em 1em;
+  }
+
+  img {
+    width: 7em; 
+    height: 7em;
+  }
+
+  .datos-usuario {
+    grid-column: 1;
+    grid-row: 2; 
+    padding: 1em 0.8em;
+  }
+
+  .form {
+    padding: 0.8em;
+    max-width: 100%; 
+  }
+
+  .grupo-datos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3em;
+    margin-bottom: 0.8em;
+  }
+
+  .input, select {
+    width: 100%; 
+  }
+
+  .botones {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 1em 0.5em;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8em;
+  }
+
+  .boton-cancelar, .boton-guardar {
+    width: 100%;
+    padding: 0.6em 0;
+    text-align: center;
+  }
+}
