@@ -39,9 +39,7 @@ body{
 .perfil-usuario{
     display: flex;
     flex-direction:column;
-    justify-content:flex-start;
     align-items: center;
-    text-align: center;
     padding: 2em 1em;
     border-right: 0.1em solid black;
     gap: 0.8em;
@@ -75,9 +73,8 @@ img{
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1em;
-    padding:0;
-    margin: 0;
 }
 
 .datos-usuario{
@@ -93,7 +90,7 @@ img{
     margin-bottom: 1.5em;
     text-align: left;
 }
-fieldset .form{
+.form{
     border: 0.08em solid black;
     padding: 1.2em;
     margin-bottom: 1.2em;
@@ -102,7 +99,6 @@ fieldset .form{
 }
 legend{
     padding: 0 0.4em;
-    font-weight: 28em;
 }
 .form-idioma{
     border: none;
@@ -117,7 +113,6 @@ legend{
 }
 .grupo-datos label{
     font-size: 0.9em;
-    white-space: nowrap;
 }
 .input, select{
     width: 12em;
@@ -131,7 +126,6 @@ legend{
     justify-content: center;
     grid-column: 2;
     grid-row: 2;
-    margin-top: 1.5em;
     gap:1em;
     padding: 1.5em 4em;
 }
