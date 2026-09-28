@@ -58,6 +58,21 @@ footer {
 p{
     font-size: 1.5em;
 }
+
+strong{
+  font-size: 2em;
+  color: black solid;
+}
+
+audio {
+    display: block;
+    width: 60%;
+    max-width: 25em;
+    margin: 1em auto;
+    border-radius: 2em;
+    box-shadow: 0 0.2em 0.6em rgba(79, 70, 229, 0.35);
+}
+
 /* Tablet (48.01em a 64em) */
 @media (min-width: 48.01em) and (max-width: 64em) {
   .barra-leccion {
@@ -99,5 +114,11 @@ p{
   footer {
     margin-top: 1.5em;
   }
+
+    audio {
+    width: 90%;
+  }
+
+  
 }
 
