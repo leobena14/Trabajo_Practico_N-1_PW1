@@ -30,7 +30,15 @@ body{
     margin-bottom: 2em;
 }
 
-.boton-iniciar, .boton-volver{
+.leccion progress{
+    display: block;
+    width: 80%;
+    height: 1em;
+    margin: 0.5em auto 1em;
+    accent-color: #4F46E5;
+}
+
+.boton-iniciar, .boton-volver,.boton-repasar{
     text-decoration:none;
     color: white;
     background-color: #4F46E5;

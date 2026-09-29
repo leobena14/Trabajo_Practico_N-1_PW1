@@ -73,6 +73,29 @@ audio {
     box-shadow: 0 0.2em 0.6em rgba(79, 70, 229, 0.35);
 }
 
+.repaso{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 0 auto 2em;
+}
+
+.tarjeta{
+    border: 0.1em solid black;
+    padding: 1em;
+    border-radius: 3em;
+}
+
+.tarjeta audio{
+    width: 100%;
+}
+.titulo-repaso{
+    width: 80%;
+    margin: 0 auto 1em;
+    background-color: #4F46E5;
+    color: white;
+}
 /* Tablet (48.01em a 64em) */
 @media (min-width: 48.01em) and (max-width: 64em) {
   .barra-leccion {
@@ -82,6 +105,10 @@ audio {
 
   .barra-leccion a {
     font-size: 2.5em; 
+  }
+   .repaso {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -117,6 +144,11 @@ audio {
 
     audio {
     width: 90%;
+  }
+
+    .repaso {
+    width: 95%;
+    grid-template-columns: 1fr;
   }
 
   
