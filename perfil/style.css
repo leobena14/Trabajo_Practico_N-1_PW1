@@ -76,14 +76,17 @@ img{
     align-items: center;
     gap: 1em;
 }
-
-.datos-usuario{
+.bloque-der{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    padding: 2.5em;
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1/3;
+}
+.datos-usuario{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 2.5em 0 2.5em;
 }
 .datos{
     font-size: 1em;
@@ -123,41 +126,106 @@ legend{
     border: 0.08em solid rgb(81, 80, 80);
     background-color: white;
     font-size: 0.9em;
+    cursor: pointer;
 }
 .botones{
     display: flex;
     justify-content: center;
-    grid-column: 2;
-    grid-row: 2;
     gap:1em;
     padding: 1.5em 4em;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-.boton-cancelar {
+.boton-cancelar,
+.boton-guardar{
     border-radius: 0.5em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: black;
 }
 .boton-cancelar:hover{
     color:white;
     background-color: rgb(215, 65, 65);
 }
-.boton-cancelar:hover a{
-    color: white;
-}
-.boton-guardar{
-    color: black;
-    border-radius: 0.5em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.boton-cancelar a{
+    color: inherit;
+    text-decoration: none;
 }
 .boton-guardar:hover{
     color: white;
     background-color: rgb(37, 138, 37);
 }
+.dato-linea {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5em;
+}
+.dato-email{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 0.5em;
+}
+.btn-editar {
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    background-color: #E5E7EB;
+    border: 0.08em solid black;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.btn-editar:hover {
+    background-color: #D1D5DB;
+}
+.modal-edicion {
+    margin: auto;
+    width: 90%;
+    max-width: 24em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    background-color: white;
+    padding: 1.5em;
+}
+.form-modal h3 {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    text-align: center;
+}
+.form-modal .campo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8em;
+    gap: 0.5em;
+}
+.form-modal .campo label {
+    font-size: 0.85em;
+    width: 45%;
+}
+.form-modal .campo input {
+    width: 55%;
+}
+.modal-acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8em;
+    margin-top: 1.2em;
+}
+.boton-cerrar {
+    padding: 0.3em 0.8em;
+    border-radius: 0.5em;
+    border: 0.08em solid black;
+    background-color: #E5E7EB;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.boton-cerrar:hover {
+    background-color: rgb(215, 65, 65);
+    color: white;
+}
+
 /* Tablet (48.01em a 64em) */
 @media (min-width: 48.01em) and (max-width: 64em) {
   .principal,.contenedor-prin {
@@ -206,10 +274,10 @@ a{
     height: 7em;
   }
 
-  .datos-usuario {
+  .bloque-der {
     grid-column: 1;
     grid-row: 2; 
-    padding: 1em 0.8em;
+    padding: 1em 0.8em 0 0.8em;
   }
 
   .form {
@@ -229,8 +297,6 @@ a{
   }
 
   .botones {
-    grid-column: 1;
-    grid-row: 3;
     padding: 1em 0.5em;
     flex-direction: column;
     align-items: stretch;
@@ -241,5 +307,14 @@ a{
     width: 100%;
     padding: 0.6em 0;
     text-align: center;
+  }
+  .form-modal .campo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-modal .campo label,
+  .form-modal .campo input {
+    width: 100%;
   }
 }
