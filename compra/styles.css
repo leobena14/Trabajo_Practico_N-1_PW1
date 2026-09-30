@@ -42,13 +42,6 @@ fieldset {
     padding: 2.5em;
 }
 
-legend {
-    background-color: #4F46E5;
-    color: white;
-    padding: 0.3em 0.8em;
-    font-size: 1.1em;
-}
-
 label {
     display: block;
     margin-top: 1em;
