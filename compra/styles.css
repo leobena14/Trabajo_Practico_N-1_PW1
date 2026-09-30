@@ -210,8 +210,10 @@ input:focus {
     .principal {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         gap: 0.5em;
+        
     }
 
     .hamburguesa {
@@ -219,12 +221,15 @@ input:focus {
         order: -1;
         cursor: pointer;
         font-size: 1.5em;
+        color: white; 
+         margin: 0;  
     }
 
     .principal .enlaces {
         display: none;
         width: 100%;
         margin: 0;
+        text-align: center;
     }
 
     #menu-toggle:checked ~ .enlaces {

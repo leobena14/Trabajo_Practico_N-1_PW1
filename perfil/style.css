@@ -340,11 +340,13 @@ legend{
     .principal {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         gap: 0.5em;
     }
 
     .hamburguesa {
+        
         display: block;
         order: -1;
         cursor: pointer;
@@ -355,6 +357,7 @@ legend{
         display: none;
         width: 100%;
         margin: 0;
+        text-align: center;
     }
 
     #menu-toggle:checked ~ .enlaces {
